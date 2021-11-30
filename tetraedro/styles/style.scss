@@ -1,0 +1,49 @@
+html,
+body {
+  overflow: hidden;
+}
+
+.tetraedro {
+  position: relative;
+  margin: 100px auto;
+  height: 500px;
+  width: 100px;
+  transform-style: preserve-3d;
+  animation: moverTetraedro 10s infinite linear;
+
+  &__cara {
+    border-style: solid;
+    border-width: 200px 0 200px 346px;
+    transform-origin: 0 0;
+    position: absolute;
+    border-color: transparent;
+
+    &-frente {
+      border-left-color: rgba(7, 196, 243, 0.349);
+      transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+    }
+    &-derecha {
+      border-left-color: rgba(151, 255, 137, 0.185);
+      transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg)
+        translateY(-400px);
+    }
+    &-izquierda {
+      border-left-color: rgba(251, 42, 255, 0.171);
+      transform: rotateX(60deg) rotateY(19.5deg);
+    }
+    &-inferior {
+      border-left-color: rgba(255, 242, 127, 0.178);
+      transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px)
+        translateY(-200px) translateZ(326px);
+    }
+  }
+}
+
+@keyframes moverTetraedro {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

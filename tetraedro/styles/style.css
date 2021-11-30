@@ -1,0 +1,71 @@
+html,
+body {
+  overflow: hidden;
+}
+
+.tetraedro {
+  position: relative;
+  margin: 100px auto;
+  height: 500px;
+  width: 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: moverTetraedro 10s infinite linear;
+          animation: moverTetraedro 10s infinite linear;
+}
+
+.tetraedro__cara {
+  border-style: solid;
+  border-width: 200px 0 200px 346px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  position: absolute;
+  border-color: transparent;
+}
+
+.tetraedro__cara-frente {
+  border-left-color: rgba(7, 196, 243, 0.349);
+  -webkit-transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+          transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
+}
+
+.tetraedro__cara-derecha {
+  border-left-color: rgba(151, 255, 137, 0.185);
+  -webkit-transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+          transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
+}
+
+.tetraedro__cara-izquierda {
+  border-left-color: rgba(251, 42, 255, 0.171);
+  -webkit-transform: rotateX(60deg) rotateY(19.5deg);
+          transform: rotateX(60deg) rotateY(19.5deg);
+}
+
+.tetraedro__cara-inferior {
+  border-left-color: rgba(255, 242, 127, 0.178);
+  -webkit-transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+          transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
+}
+
+@-webkit-keyframes moverTetraedro {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes moverTetraedro {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
