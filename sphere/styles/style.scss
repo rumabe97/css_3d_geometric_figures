@@ -1,5 +1,3 @@
-$divNum: 20;
-
 html,
 body {
   height: 100%;
@@ -33,9 +31,9 @@ body {
     transform-style: preserve-3d;
   }
 
-  @for $item from 1 through $divNum * 2 {
+  @for $item from 1 through 40 {
     .sphere__div:nth-child(#{$item}) {
-      $divDeg: 360 / $divNum * $item;
+      $divDeg: 360 / 20 * $item;
       @if $item % 2==0 {
         transform: rotateY(#{$divDeg}deg);
       } @else {
