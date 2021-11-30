@@ -1,0 +1,56 @@
+.cubo {
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+  transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+
+  &__cara {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-superior {
+      background: rgba(221, 53, 53, 0.322);
+      transform: rotateX(90deg) translateZ(100px);
+    }
+    &-frente {
+      background: rgba(168, 248, 77, 0.322);
+      transform: translateZ(100px);
+    }
+    &-atras {
+      background: rgba(109, 111, 245, 0.322);
+      transform: translateZ(-100px);
+    }
+    &-derecha {
+      background: rgba(226, 3, 255, 0.322);
+      transform: rotateY(90deg) translateZ(100px);
+    }
+    &-izquierda {
+      background: rgba(103, 255, 116, 0.322);
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+    &-inferior {
+      background: rgba(255, 72, 246, 0.322);
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  33.333% {
+    transform: rotateX(-70deg) rotateY(-90deg);
+  }
+  66.666% {
+    transform: rotateX(-70deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
