@@ -28,15 +28,15 @@ body {
   height: 200px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: spin 4s infinite;
-          animation: spin 4s infinite;
+  -webkit-animation: rotate 4s infinite;
+          animation: rotate 4s infinite;
 }
 
 .cubo-secundario {
   width: 100px;
   height: 100px;
-  -webkit-animation: spin-inner 4s infinite;
-          animation: spin-inner 4s infinite;
+  -webkit-animation: rotateSecondary 4s infinite;
+          animation: rotateSecondary 4s infinite;
 }
 
 .cubo__cara {
@@ -111,7 +111,7 @@ body {
           transform: translateZ(-50px) rotateX(180deg);
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotateX(0deg) rotateY(0deg);
             transform: rotateX(0deg) rotateY(0deg);
@@ -130,7 +130,7 @@ body {
   }
 }
 
-@keyframes spin {
+@keyframes rotate {
   0% {
     -webkit-transform: rotateX(0deg) rotateY(0deg);
             transform: rotateX(0deg) rotateY(0deg);
@@ -149,7 +149,7 @@ body {
   }
 }
 
-@-webkit-keyframes spin-inner {
+@-webkit-keyframes rotateSecondary {
   0% {
     -webkit-transform: translateX(50px) translateY(50px) rotateY(0deg) rotateX(90deg);
             transform: translateX(50px) translateY(50px) rotateY(0deg) rotateX(90deg);
@@ -168,7 +168,7 @@ body {
   }
 }
 
-@keyframes spin-inner {
+@keyframes rotateSecondary {
   0% {
     -webkit-transform: translateX(50px) translateY(50px) rotateY(0deg) rotateX(90deg);
             transform: translateX(50px) translateY(50px) rotateY(0deg) rotateX(90deg);

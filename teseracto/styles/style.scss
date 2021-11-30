@@ -19,12 +19,12 @@ body {
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: spin 4s infinite;
+    animation: rotate 4s infinite;
   }
   &-secundario {
     width: 100px;
     height: 100px;
-    animation: spin-inner 4s infinite;
+    animation: rotateSecondary 4s infinite;
   }
 
   &__cara {
@@ -83,7 +83,7 @@ body {
   }
 }
 
-@keyframes spin {
+@keyframes rotate {
   0% {
     transform: rotateX(0deg) rotateY(0deg);
   }
@@ -98,7 +98,7 @@ body {
   }
 }
 
-@keyframes spin-inner {
+@keyframes rotateSecondary {
   0% {
     transform: translateX(50px) translateY(50px) rotateY(0deg) rotateX(90deg);
   }

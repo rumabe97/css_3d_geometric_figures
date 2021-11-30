@@ -1,0 +1,58 @@
+$divNum: 20;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sphere {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: rotate 15s infinite linear;
+
+  &__div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 0.5px rgba(56, 248, 255, 0.363);
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(56, 248, 255, 0.363);
+    transform-style: preserve-3d;
+  }
+
+  @for $item from 1 through $divNum * 2 {
+    .sphere__div:nth-child(#{$item}) {
+      $divDeg: 360 / $divNum * $item;
+      @if $item % 2==0 {
+        transform: rotateY(#{$divDeg}deg);
+      } @else {
+        transform: rotateX(#{$divDeg}deg);
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(50deg) rotateZ(50deg);
+  }
+  50% {
+    transform: rotateY(360deg) rotateZ(360deg);
+  }
+  100% {
+    transform: rotateY(50deg) rotateZ(50deg);
+  }
+}
