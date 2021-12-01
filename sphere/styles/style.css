@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background: #000;
+  background-color: blueviolet;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -22,8 +22,8 @@ body {
 }
 
 .sphere {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-animation: rotate 15s infinite linear;
@@ -32,8 +32,8 @@ body {
 
 .sphere__div {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   border: solid 0.5px rgba(56, 248, 255, 0.363);
   border-radius: 50%;
   -webkit-box-shadow: 0 0 3px rgba(56, 248, 255, 0.363);
@@ -42,204 +42,104 @@ body {
           transform-style: preserve-3d;
 }
 
-.sphere .sphere__div:nth-child(1) {
+.sphere__div:nth-child(1) {
   -webkit-transform: rotateX(18deg);
           transform: rotateX(18deg);
 }
 
-.sphere .sphere__div:nth-child(2) {
+.sphere__div:nth-child(2) {
   -webkit-transform: rotateY(36deg);
           transform: rotateY(36deg);
 }
 
-.sphere .sphere__div:nth-child(3) {
+.sphere__div:nth-child(3) {
   -webkit-transform: rotateX(54deg);
           transform: rotateX(54deg);
 }
 
-.sphere .sphere__div:nth-child(4) {
+.sphere__div:nth-child(4) {
   -webkit-transform: rotateY(72deg);
           transform: rotateY(72deg);
 }
 
-.sphere .sphere__div:nth-child(5) {
+.sphere__div:nth-child(5) {
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg);
 }
 
-.sphere .sphere__div:nth-child(6) {
+.sphere__div:nth-child(6) {
   -webkit-transform: rotateY(108deg);
           transform: rotateY(108deg);
 }
 
-.sphere .sphere__div:nth-child(7) {
+.sphere__div:nth-child(7) {
   -webkit-transform: rotateX(126deg);
           transform: rotateX(126deg);
 }
 
-.sphere .sphere__div:nth-child(8) {
+.sphere__div:nth-child(8) {
   -webkit-transform: rotateY(144deg);
           transform: rotateY(144deg);
 }
 
-.sphere .sphere__div:nth-child(9) {
+.sphere__div:nth-child(9) {
   -webkit-transform: rotateX(162deg);
           transform: rotateX(162deg);
 }
 
-.sphere .sphere__div:nth-child(10) {
+.sphere__div:nth-child(10) {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.sphere .sphere__div:nth-child(11) {
+.sphere__div:nth-child(11) {
   -webkit-transform: rotateX(198deg);
           transform: rotateX(198deg);
 }
 
-.sphere .sphere__div:nth-child(12) {
+.sphere__div:nth-child(12) {
   -webkit-transform: rotateY(216deg);
           transform: rotateY(216deg);
 }
 
-.sphere .sphere__div:nth-child(13) {
+.sphere__div:nth-child(13) {
   -webkit-transform: rotateX(234deg);
           transform: rotateX(234deg);
 }
 
-.sphere .sphere__div:nth-child(14) {
+.sphere__div:nth-child(14) {
   -webkit-transform: rotateY(252deg);
           transform: rotateY(252deg);
 }
 
-.sphere .sphere__div:nth-child(15) {
+.sphere__div:nth-child(15) {
   -webkit-transform: rotateX(270deg);
           transform: rotateX(270deg);
 }
 
-.sphere .sphere__div:nth-child(16) {
+.sphere__div:nth-child(16) {
   -webkit-transform: rotateY(288deg);
           transform: rotateY(288deg);
 }
 
-.sphere .sphere__div:nth-child(17) {
+.sphere__div:nth-child(17) {
   -webkit-transform: rotateX(306deg);
           transform: rotateX(306deg);
 }
 
-.sphere .sphere__div:nth-child(18) {
+.sphere__div:nth-child(18) {
   -webkit-transform: rotateY(324deg);
           transform: rotateY(324deg);
 }
 
-.sphere .sphere__div:nth-child(19) {
+.sphere__div:nth-child(19) {
   -webkit-transform: rotateX(342deg);
           transform: rotateX(342deg);
 }
 
-.sphere .sphere__div:nth-child(20) {
+.sphere__div:nth-child(20) {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
-}
-
-.sphere .sphere__div:nth-child(21) {
-  -webkit-transform: rotateX(378deg);
-          transform: rotateX(378deg);
-}
-
-.sphere .sphere__div:nth-child(22) {
-  -webkit-transform: rotateY(396deg);
-          transform: rotateY(396deg);
-}
-
-.sphere .sphere__div:nth-child(23) {
-  -webkit-transform: rotateX(414deg);
-          transform: rotateX(414deg);
-}
-
-.sphere .sphere__div:nth-child(24) {
-  -webkit-transform: rotateY(432deg);
-          transform: rotateY(432deg);
-}
-
-.sphere .sphere__div:nth-child(25) {
-  -webkit-transform: rotateX(450deg);
-          transform: rotateX(450deg);
-}
-
-.sphere .sphere__div:nth-child(26) {
-  -webkit-transform: rotateY(468deg);
-          transform: rotateY(468deg);
-}
-
-.sphere .sphere__div:nth-child(27) {
-  -webkit-transform: rotateX(486deg);
-          transform: rotateX(486deg);
-}
-
-.sphere .sphere__div:nth-child(28) {
-  -webkit-transform: rotateY(504deg);
-          transform: rotateY(504deg);
-}
-
-.sphere .sphere__div:nth-child(29) {
-  -webkit-transform: rotateX(522deg);
-          transform: rotateX(522deg);
-}
-
-.sphere .sphere__div:nth-child(30) {
-  -webkit-transform: rotateY(540deg);
-          transform: rotateY(540deg);
-}
-
-.sphere .sphere__div:nth-child(31) {
-  -webkit-transform: rotateX(558deg);
-          transform: rotateX(558deg);
-}
-
-.sphere .sphere__div:nth-child(32) {
-  -webkit-transform: rotateY(576deg);
-          transform: rotateY(576deg);
-}
-
-.sphere .sphere__div:nth-child(33) {
-  -webkit-transform: rotateX(594deg);
-          transform: rotateX(594deg);
-}
-
-.sphere .sphere__div:nth-child(34) {
-  -webkit-transform: rotateY(612deg);
-          transform: rotateY(612deg);
-}
-
-.sphere .sphere__div:nth-child(35) {
-  -webkit-transform: rotateX(630deg);
-          transform: rotateX(630deg);
-}
-
-.sphere .sphere__div:nth-child(36) {
-  -webkit-transform: rotateY(648deg);
-          transform: rotateY(648deg);
-}
-
-.sphere .sphere__div:nth-child(37) {
-  -webkit-transform: rotateX(666deg);
-          transform: rotateX(666deg);
-}
-
-.sphere .sphere__div:nth-child(38) {
-  -webkit-transform: rotateY(684deg);
-          transform: rotateY(684deg);
-}
-
-.sphere .sphere__div:nth-child(39) {
-  -webkit-transform: rotateX(702deg);
-          transform: rotateX(702deg);
-}
-
-.sphere .sphere__div:nth-child(40) {
-  -webkit-transform: rotateY(720deg);
-          transform: rotateY(720deg);
 }
 
 @-webkit-keyframes rotate {
